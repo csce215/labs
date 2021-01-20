@@ -19,18 +19,26 @@ Example:
 
 ## Review some commands
 
-- `pwd`: Current directory
 - `echo`: Print a message
+- `pwd`: Current directory
 - `ls`: List files
 - `touch`: Create empty file
 - `mkdir`: Create directory
 - `mv`: Move or rename a file or directory
+
+*Pause for questions.*
+
 - `cd`: Change directory
 - `ls -a`: List files, include hidden files
 - `.` and `..`: Current and previous directory
+
+*Pause for questions.*
+
 - `rm`: Delete
 - `rm -r`: Delete recursively (used for deleting directories)
 - `man`: Open the manual page for a command
+
+*Pause for questions.*
 
 ## Redirection with `>` and `>>`
 
@@ -47,11 +55,15 @@ What is the difference?
 - `>`: Re-creates the file before writing the output.
 - `>>`: Appends the output to the bottom of the file. If file doesn't exist, it will create it.
 
+*Pause for questions.*
+
 ## New command: `cat`
 
 [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) command allows you to concatenate files and print the concatenation in the standard output. You can `cat` at least one file.
 
 `cat file1.txt file2.txt file3.txt` (and many more files)
+
+*Pause for questions.*
 
 ## SCP for transferring files
 
@@ -68,9 +80,19 @@ Since we are pulling a file, the `scp` command needs to be executed from a local
 
 `scp -P 222 fvilchez@L-1D43-01.cse.sc.edu:~/test.txt .`
 
+*Pause for questions.*
+
 ### Sending a file to a remote machine
 
 Same logic applies but we need to switch the order of the arguments. First we specify the location of the file in the local machine, and after it the location of the file in the remote machine. In the following example, the file *./test.txt* is sent to the home directory of the remote machine.
 
 `scp -P 222 ./test.txt fvilchez@L-1D43-01.cse.sc.edu:~`
 
+*Pause for questions.*
+
+
+## Show Google Form
+
+Complete form for attendance.
+
+<!-- https://docs.google.com/forms/d/e/1FAIpQLSeW5WzcUTO6u-GEYsBwlhnme-6PUTmijWv85Ziu2ZhCVAJepg/viewform -->
