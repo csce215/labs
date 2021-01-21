@@ -31,6 +31,7 @@ Example:
 - `cd`: Change directory
 - `ls -a`: List files, include hidden files
 - `.` and `..`: Current and previous directory
+- `~`: Reference to your HOME directory
 
 *Pause for questions.*
 
@@ -57,7 +58,7 @@ What is the difference?
 
 *Pause for questions.*
 
-## New command: `cat`
+## More about `cat` command
 
 [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) command allows you to concatenate files and print the concatenation in the standard output. You can `cat` at least one file.
 
