@@ -77,7 +77,7 @@ The [scp](https://linux.die.net/man/1/scp) command will allow students to send o
 Additionally to the already required for the `ssh`, we also need the following information for pulling a file:
 
 - *Absolute path* of the file **in the remote machine** that we want to pull. Example: */acct/fvilchez/test.txt*
-- *Absolute or Relative path* of the directory **in the localmachine** where we want to store the file. Example: *.* (*dot* which refers to the *current directory*)
+- *Absolute or Relative path* of the directory **in the local machine** where we want to store the file. Example: *.* (*dot* which refers to the *current directory*)
 
 Since we are pulling a file, the `scp` command needs to be executed from a local terminal, i.e. a terminal without the `ssh` connection.
 
