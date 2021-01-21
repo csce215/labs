@@ -35,6 +35,7 @@ Example:
 
 *Pause for questions.*
 
+**WARNING: `rm` PERMANENTLY DELETES! You CANNOT recover anything when you use `rm`. I recommend to `mkdir OLD` to make a trash directory OLD and `mv` older/uneeded files/directories there. You can always delete them later.**
 - `rm`: Delete
 - `rm -r`: Delete recursively (used for deleting directories)
 - `man`: Open the manual page for a command
