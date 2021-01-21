@@ -100,3 +100,160 @@ Same logic applies but we need to switch the order of the arguments. First we sp
 Complete form for attendance.
 
 <!-- https://docs.google.com/forms/d/e/1FAIpQLSeW5WzcUTO6u-GEYsBwlhnme-6PUTmijWv85Ziu2ZhCVAJepg/viewform -->
+
+## Commands executed during the lab
+
+*Content may be different from the commands executed during the lab*.
+
+### Review some commands
+
+```
+fvilchez@cocsce-l3d22-16 ~ $ echo "Hello World!"
+Hello World!
+fvilchez@cocsce-l3d22-16 ~ $ pwd
+/acct/fvilchez
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp  Pictures   public_html  test_environment
+Desktop    extractdata  Music     polls.csv  Templates    Videos
+Documents  lab1.txt     osx       Public     test
+fvilchez@cocsce-l3d22-16 ~ $ touch myfirstfile.txt
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp         osx        Public       test
+Desktop    extractdata  Music            Pictures   public_html  test_environment
+Documents  lab1.txt     myfirstfile.txt  polls.csv  Templates    Videos
+fvilchez@cocsce-l3d22-16 ~ $ mkdir myfirstdirectory
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        extractdata  myfirstdirectory  polls.csv    test
+Desktop    lab1.txt     myfirstfile.txt   Public       test_environment
+Documents  Main.cpp     osx               public_html  Videos
+Downloads  Music        Pictures          Templates
+fvilchez@cocsce-l3d22-16 ~ $ mv myfirstfile.txt mysecondfile.txt
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        extractdata  myfirstdirectory  polls.csv    test
+Desktop    lab1.txt     mysecondfile.txt  Public       test_environment
+Documents  Main.cpp     osx               public_html  Videos
+Downloads  Music        Pictures          Templates
+fvilchez@cocsce-l3d22-16 ~ $ mv myfirstdirectory myseconddirectory
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        extractdata  myseconddirectory  polls.csv    test
+Desktop    lab1.txt     mysecondfile.txt   Public       test_environment
+Documents  Main.cpp     osx                public_html  Videos
+Downloads  Music        Pictures           Templates
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $ pwd
+/acct/fvilchez
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        extractdata  myseconddirectory  polls.csv    test
+Desktop    lab1.txt     mysecondfile.txt   Public       test_environment
+Documents  Main.cpp     osx                public_html  Videos
+Downloads  Music        Pictures           Templates
+fvilchez@cocsce-l3d22-16 ~ $ cd myseconddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ pwd
+/acct/fvilchez/myseconddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ touch mynewfile.txt
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ ls
+mynewfile.txt
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ ls -a
+.  ..  mynewfile.txt
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ cd ..
+fvilchez@cocsce-l3d22-16 ~ $ pwd
+/acct/fvilchez
+fvilchez@cocsce-l3d22-16 ~ $ cd myseconddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ cd ~
+fvilchez@cocsce-l3d22-16 ~ $ pwd
+/acct/fvilchez
+fvilchez@cocsce-l3d22-16 ~ $ cd myseconddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ mkdir mythirddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory $ cd mythirddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory/mythirddirectory $ pwd
+/acct/fvilchez/myseconddirectory/mythirddirectory
+fvilchez@cocsce-l3d22-16 ~/myseconddirectory/mythirddirectory $ cd ~
+fvilchez@cocsce-l3d22-16 ~ $ pwd
+/acct/fvilchez
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        extractdata  myseconddirectory  polls.csv    test
+Desktop    lab1.txt     mysecondfile.txt   Public       test_environment
+Documents  Main.cpp     osx                public_html  Videos
+Downloads  Music        Pictures           Templates
+fvilchez@cocsce-l3d22-16 ~ $ rm mysecondfile.txt
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp           osx        Public       test
+Desktop    extractdata  Music              Pictures   public_html  test_environment
+Documents  lab1.txt     myseconddirectory  polls.csv  Templates    Videos
+fvilchez@cocsce-l3d22-16 ~ $ rm myseconddirectory
+rm: cannot remove 'myseconddirectory': Is a directory
+fvilchez@cocsce-l3d22-16 ~ $ rm -r myseconddirectory
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp  Pictures   public_html  test_environment
+Desktop    extractdata  Music     polls.csv  Templates    Videos
+Documents  lab1.txt     osx       Public     test
+fvilchez@cocsce-l3d22-16 ~ $ man rm
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $
+```
+
+### Redirection
+
+```
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp  Pictures   public_html  test_environment
+Desktop    extractdata  Music     polls.csv  Templates    Videos
+Documents  lab1.txt     osx       Public     test
+fvilchez@cocsce-l3d22-16 ~ $ echo "my first question"
+my first question
+fvilchez@cocsce-l3d22-16 ~ $ echo "my first question" > questions.txt
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp  Pictures   public_html    test
+Desktop    extractdata  Music     polls.csv  questions.txt  test_environment
+Documents  lab1.txt     osx       Public     Templates      Videos
+fvilchez@cocsce-l3d22-16 ~ $ cat questions.txt
+my first question
+fvilchez@cocsce-l3d22-16 ~ $ echo "my second question"
+my second question
+fvilchez@cocsce-l3d22-16 ~ $ echo "my second question" >> questions.txt
+fvilchez@cocsce-l3d22-16 ~ $ cat questions.txt
+my first question
+my second question
+fvilchez@cocsce-l3d22-16 ~ $ echo "my third questions" > questions.txt
+fvilchez@cocsce-l3d22-16 ~ $ cat questions.txt
+my third questions
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215        Downloads    Main.cpp  Pictures   public_html    test
+Desktop    extractdata  Music     polls.csv  questions.txt  test_environment
+Documents  lab1.txt     osx       Public     Templates      Videos
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $
+```
+
+### More on `cat`
+
+```
+fvilchez@cocsce-l3d22-16 ~ $ echo "first message" > first.txt
+fvilchez@cocsce-l3d22-16 ~ $ echo "second message" > second.txt
+fvilchez@cocsce-l3d22-16 ~ $ echo "third message" > third.txt
+fvilchez@cocsce-l3d22-16 ~ $ cat first.txt
+first message
+fvilchez@cocsce-l3d22-16 ~ $ cat second.txt
+second message
+fvilchez@cocsce-l3d22-16 ~ $ cat third.txt
+third message
+fvilchez@cocsce-l3d22-16 ~ $ cat first.txt second.txt third.txt
+first message
+second message
+third message
+fvilchez@cocsce-l3d22-16 ~ $ cat first.txt second.txt third.txt > concatenation.txt
+fvilchez@cocsce-l3d22-16 ~ $ cat concatenation.txt
+first message
+second message
+third message
+fvilchez@cocsce-l3d22-16 ~ $ ls
+215                Downloads    Main.cpp  polls.csv      second.txt        third.txt
+concatenation.txt  extractdata  Music     Public         Templates         Videos
+Desktop            first.txt    osx       public_html    test
+Documents          lab1.txt     Pictures  questions.txt  test_environment
+fvilchez@cocsce-l3d22-16 ~ $
+fvilchez@cocsce-l3d22-16 ~ $
+```
