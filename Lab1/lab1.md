@@ -51,6 +51,8 @@ Commands executed show the result in our screen by default (also known as **stan
 
 `echo "Hello world" > hello.txt`
 
+*Ask what command can be used to view file content. Pause for answers.*
+
 What is the difference?
 
 - `>`: Re-creates the file before writing the output.
