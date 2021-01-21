@@ -82,13 +82,13 @@ Since we are pulling a file, the `scp` command needs to be executed from a local
 
 *Pause for questions.*
 
-### Sending a file to a remote machine
+<!-- ### Sending a file to a remote machine
 
 Same logic applies but we need to switch the order of the arguments. First we specify the location of the file in the local machine, and after it the location of the file in the remote machine. In the following example, the file *./test.txt* is sent to the home directory of the remote machine.
 
 `scp -P 222 ./test.txt fvilchez@L-1D43-01.cse.sc.edu:~`
 
-*Pause for questions.*
+*Pause for questions.* -->
 
 
 ## Show Google Form
