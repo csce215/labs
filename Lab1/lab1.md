@@ -81,7 +81,7 @@ Additionally to the already required for the `ssh`, we also need the following i
 
 Since we are pulling a file, the `scp` command needs to be executed from a local terminal, i.e. a terminal without the `ssh` connection.
 
-`scp -P 222 fvilchez@L-1D43-01.cse.sc.edu:~/test.txt .`
+`scp -P 222 fvilchez@L-1D43-01.cse.sc.edu:/acct/fvilchez/test.txt .`
 
 *Pause for questions.*
 
