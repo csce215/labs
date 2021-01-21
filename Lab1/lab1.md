@@ -103,7 +103,13 @@ Complete form for attendance.
 
 ## Commands executed during the lab
 
-*Content may be different from the commands executed during the lab*.
+*Content may be different from the exact commands used during the lab*.
+
+### SSH
+
+```
+ssh -p 222 fvilchez@L-1D43-01.cse.sc.edu
+```
 
 ### Review some commands
 
@@ -256,4 +262,10 @@ Desktop            first.txt    osx       public_html    test
 Documents          lab1.txt     Pictures  questions.txt  test_environment
 fvilchez@cocsce-l3d22-16 ~ $
 fvilchez@cocsce-l3d22-16 ~ $
+```
+
+### SCP
+
+```
+scp -P 222 fvilchez@L-1D43-01.cse.sc.edu:/acct/fvilchez/concatenation.txt .
 ```
