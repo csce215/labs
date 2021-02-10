@@ -47,11 +47,11 @@ The structure of the command. In other words, the order how the arguments of the
 
 A few special symbols we may be wondering what they mean:
 
-* An underlined word like <ins>OPTION</ins>, means that it will be replaced with an appropiate value. For example, the <ins>FILE</ins> word should be replaced with the name of a file. The <ins>OPTION</ins> word should be replaced with an option like `-l`, `-a`, etc. Information about what this values mean is usually included in the next sections.
+* An underlined word like <ins>OPTION</ins>, means that it will be replaced with an appropiate value. For example, the <ins>FILE</ins> word should be replaced with the name of a file. The <ins>OPTION</ins> word should be replaced with an option like `-l`, `-a`, etc. Information about what this values mean is usually included in the next sections of the man page.
 
 *Pause for questions*
 
-* The `...` means that the previous value can be repeated multiple times. In other words, we could use multiple options on the right side of the `ls` command. Also, we could specify multiple files. Notice that, even though we can use multiple <ins>OPTIONS</ins> and <ins>FILES</ins>, the <ins>OPTIONS</ins> will always be before the <ins>FILES</ins>.
+* The `...` means that the previous value can be repeated multiple times. In other words, we could use multiple options on the right side of the `ls` command. Also, we could specify multiple files. Notice that, even though we can use multiple <ins>OPTIONS</ins> and <ins>FILES</ins>, the <ins>OPTIONS</ins> will always be before the <ins>FILES</ins> for the `ls` command.
 
 *Pause for questions*
 
