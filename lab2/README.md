@@ -149,8 +149,6 @@ Remember, if the option you are using **needs** a value next to it, you have to 
 - `tail`: Output last part of files
 - `cut`: Print selected parts of a file
 - `paste`: Merge lines of files
-- `grep`: Print lines matching a pattern
-- `find`: Search for files
 
 ## Standard input meets standard output
 
@@ -181,6 +179,37 @@ or
 `cat file.txt | head`
 
 Notice that we do not need to specify a <ins>FILE</ins> next to `head` since we want it to use the result from the previous command as an input.
+
+
+## More commands
+
+- `grep`: Print lines matching a pattern
+- `find`: Search for files
+
+## Unix wildcards vs Regex
+
+Unix wildcards and regex are special set of characters that can allow us to specify a special pattern in filenames or content.
+
+Depending on the command you are using, it may support that you use unix wildcards or regex.
+
+For example, the `-name` option of the `find` command support unix wildcards. Some unix wildcards are (the full list of unix wildcards can be found in TLCL Pg.26):
+
+![](../figures/unixwildcards-p1.png)
+
+Unix wildcards are generally supported by any command where you need to specify a <ins>FILE</ins>. For example, we could use unix wildcards with our `cat` command:
+
+![](../figures/mancat-p1.png)
+
+Example: `cat *.txt` which `cat` the content of all the `.txt` files in the current directory. 
+
+Some other commands use regex, like the `grep` command in its required <ins>PATTERN</ins> argument. 
+
+![](../figures/mangrep-p1.png)
+
+We will get more into detail about the different regex values. For this assignment you may need to know only the next one:
+- `.`: Matches any character
+
+Notice that for the `grep` command we will have to use a **Regex in the <ins>PATTERN</ins> argument** and **Unix Wildcards in the <ins>FILE</ins> argument**.
 
 ## How to get your file in the Linux Machine
 
