@@ -180,6 +180,7 @@ or
 
 Notice that we do not need to specify a <ins>FILE</ins> next to `head` since we want it to use the result from the previous command as an input.
 
+*Pause for questions*
 
 ## More commands
 
