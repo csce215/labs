@@ -46,7 +46,7 @@ Example:
 
 Commands executed show the result in our screen by default (also known as **standard output**). However, we can redirect that result to be displayed somewhere else. Some possible locations where we can redirect the output illustrated bellow (*Taken from DAS page 168*):
 
-![](./stdoutput.png)
+![](../figures/stdout.png)
 
 `>` and `>>` are used for redirecting the output to a specific file. For example:
 
