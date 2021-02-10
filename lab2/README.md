@@ -192,7 +192,7 @@ Unix wildcards and regex are special set of characters that can allow us to spec
 
 Depending on the command you are using, it may support that you use unix wildcards or regex.
 
-For example, the `-name` option of the `find` command support unix wildcards. Some unix wildcards are (the full list of unix wildcards can be found in TLCL Pg.26):
+For example, the `-name` option of the `find` command support unix wildcards. Some unix wildcards are listed below (full list can be found in TLCL Pg.26):
 
 ![](../figures/unixwildcards-p1.png)
 
