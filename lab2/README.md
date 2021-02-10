@@ -47,15 +47,15 @@ The structure of the command. In other words, the order how the arguments of the
 
 A few special symbols we may be wondering what they mean:
 
-* An underlined word like <u>OPTIONS</u>, means that it will be replaced with an appropiate value. For example, the <u>FILE</u> word should be replaced with the name of a file. The <u>OPTION</u> word should be replaced with an option like `-l`, `-a`, etc. Information about what this values mean is usually included in the next sections.
+* An underlined word like <ins>OPTION</ins>, means that it will be replaced with an appropiate value. For example, the <ins>FILE</ins> word should be replaced with the name of a file. The <ins>OPTION</ins> word should be replaced with an option like `-l`, `-a`, etc. Information about what this values mean is usually included in the next sections.
 
 *Pause for questions*
 
-* The `...` means that the previous value can be repeated multiple times. In other words, we could use multiple options on the right side of the `ls` command. Also, we could specify multiple files. Notice that, even though we can use multiple <u>OPTIONS</u> and <u>FILES</u>, the <u>OPTIONS</u> will always be before the <u>FILES</u>.
+* The `...` means that the previous value can be repeated multiple times. In other words, we could use multiple options on the right side of the `ls` command. Also, we could specify multiple files. Notice that, even though we can use multiple <ins>OPTIONS</ins> and <ins>FILES</ins>, the <ins>OPTIONS</ins> will always be before the <ins>FILES</ins>.
 
 *Pause for questions*
 
-* If a value is in [brackets] it means it is optional. For example, for the `ls` command could be followed by <u>OPTIONS</u> or not. Same for <u>FILES</u>.
+* If a value is in [brackets] it means it is optional. For example, for the `ls` command could be followed by <ins>OPTIONS</ins> or not. Same for <ins>FILES</ins>.
 
 *Pause for questions*
 
@@ -67,7 +67,7 @@ A more detailed description of the command.
 
 ### Options section
 
-Some commands has this section as part of the description section. This is the list of values that we can use in the <u>OPTION</u> argument and what each of them do.
+Some commands has this section as part of the description section. This is the list of values that we can use in the <ins>OPTION</ins> argument and what each of them do.
 
 ![](../figures/manlsoptions.png)
 
@@ -81,10 +81,10 @@ An option represented by a letter.
 
 Usage examples: 
 
-As we know, we could use the `ls` command with no <u>FILE</u> value:
+As we know, we could use the `ls` command with no <ins>FILE</ins> value:
 `ls -S`
 
-or with a <u>FILE</u> value: `ls -S ~/215`
+or with a <ins>FILE</ins> value: `ls -S ~/215`
 
 #### Long option
 
@@ -94,7 +94,7 @@ Some options have a long version of it.
 
 Usage example: `ls --file-type`
 
-As we already know, if you want to use a <u>FILE</u>, you just place it next to the option: `ls --file-type ~/215`.
+As we already know, if you want to use a <ins>FILE</ins>, you just place it next to the option: `ls --file-type ~/215`.
 
 #### Short but also long option available
 
@@ -180,7 +180,7 @@ or
 
 `cat file.txt | head`
 
-Notice that we do not need to specify a <u>FILE</u> next to `head` since we want it to use the result from the previous command as an input.
+Notice that we do not need to specify a <ins>FILE</ins> next to `head` since we want it to use the result from the previous command as an input.
 
 ## How to get your file in the Linux Machine
 
