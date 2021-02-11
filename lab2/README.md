@@ -114,15 +114,17 @@ Taken from the `man tree` page:
 
 ![](../figures/mantreeoption-L.png)
 
-Usage example: `tree -L 2` or `tree -L2`. **Both are valid ways to specify a value for a short option.** The one with an space is more readable so I recommend to use that one.
+Usage example: `tree -L 2`. 
 
-For an argument needed in a long option, you will have to leave an space or use an equal symbol:
+Some commands allow the value without a space for example: `ssh -p222` or `ssh -p 222`. However, that is not valid for all commands, because of that I would recommend leaving a space.
+
+For an argument needed in a long option, you will have to leave an space:
 
 ![](../figures/mantreeoption--filelimit.png)
 
 Usage example: `tree --filelimit 3`.
 
-Be aware that some options will request you to specify the value using the `=` symbol. Example taken from `ls` man page:
+Some commands will require that you to specify the value using the `=` symbol. Example taken from `ls` man page:
 
 ![](../figures/manlsoption--format.png)
 
@@ -134,10 +136,10 @@ Usage example: `ls --format=commas`
 
 You can append many of the short options together, so if we want to use the `-a` and `-l` option of the `ls`:
 
-![](../figures/manlsoption-a.png)
+![](../figures/manlsoption-S.png)
 ![](../figures/manlsoption-l.png)
 
-We can either do: `ls -a -l` or `ls -al` or `ls -la`
+We can either do: `ls -S -l` or `ls -Sl` or `ls -lS`
 
 Remember, if the option you are using **needs** a value next to it, you have to provide the value immediately after it.
 
@@ -150,11 +152,13 @@ Remember, if the option you are using **needs** a value next to it, you have to 
 - `cut`: Print selected parts of a file
 - `paste`: Merge lines of files
 
+*Pause for questions*
+
 ## Standard input meets standard output
 
 So far, we have provided a file path to most of our commands to use its content as an input. Example:
 
-`cat file.txt`
+`head file.txt`
 
 However, we can tell a command to use the results from another command as an input, instead of the content of a file. In other words, we can change the *standard input*.
 
@@ -184,8 +188,8 @@ Notice that we do not need to specify a <ins>FILE</ins> next to `head` since we 
 
 ## More commands
 
-- `grep`: Print lines matching a pattern
 - `find`: Search for files
+- `grep`: Print lines matching a pattern
 
 ## Unix wildcards vs Regex
 
