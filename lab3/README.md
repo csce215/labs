@@ -1,4 +1,4 @@
-# Require Lab 3 Notes
+# Required Lab 3 Notes
 
 ## VIM
 Basic functionality:  
