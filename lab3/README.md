@@ -52,8 +52,8 @@ The ```sed``` (stream editor) command involves searching and replacing.
 ## tr
 Translate or delete characters (from man page).
 These accomplish the same thing (converting all uppercase to lowercase):  
-- ```tr [:upper:] [:lower:]```
-- ```tr [A-Z] [a-z]```
+- ```tr '[:upper:]' '[:lower:]'```
+- ```tr '[A-Z]' '[a-z]'```
 
 
 ## diff
