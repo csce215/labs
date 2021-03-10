@@ -32,7 +32,7 @@ To create a bash script you can just open a newfile using vim ```vi <scriptname>
 
 From here you can just put commands in the file using vim and the save them.
 
-Two ways to run: using ```bash <scriptname>.sh``` or ```./<scriptname.sh```  
+Two ways to run: using ```bash <scriptname>.sh``` or ```./<scriptname.sh>```  
 
 The difference between the two is that one can be run without execute permissions and the other must have execute permissions granted.
 
