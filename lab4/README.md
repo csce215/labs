@@ -10,7 +10,7 @@ One normal day at the office, you were happily coding when suddenly you got the 
 
 ![](../figures/error.png)
 
-You know that the company's website backend runs in the server *L-1D43-01.cse.sc.edu* and that the logs (files with all the transactions of the website) are located in ~/company/website/logs 
+You know that the company's website backend runs in the server *L-1D43-01.cse.sc.edu* and that the logs (files with all the transactions of the website) are located in a *logs* directory somewhere in ~/company/website
 
 *Question: What should you do?*
 
@@ -40,6 +40,7 @@ Commands we have learned
 
 You saved the day. If you feel like giving it a try, feel free to `wget` the files used in this lab from the following url:
 
+`wget http://cse.sc.edu/~fvilchez/215/tons_of_files.tar.gz`
 
 *Additional question: When will I need to use a bash script?*
 
