@@ -16,7 +16,7 @@ You know that the company's website backend runs in the server *L-1D43-01.cse.sc
 
 ## Second Act
 
-Commands we have learned
+Get your commands ready
 
 - ssh
 - echo
