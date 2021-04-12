@@ -1,7 +1,7 @@
 # Lab 4 - When will I use my CSCE215 knowledge?
 
-You can follow along by downloading this exercise to the linux lab in your home (~) directory!  
-`wget http://cse.sc.edu/~fvilchez/215/tons_of_files.tar.gz`
+*You can follow along by downloading this exercise to the linux lab in your home (~) directory!  
+`wget http://cse.sc.edu/~fvilchez/215/tons_of_files.tar.gz`*
 
 You may be wondering when will all this knowledge be useful. Well, it will be useful in so many situations (including in your daily life as a computer user), but in this lab, we will give an example from a professional perspective as a Fullstack Software Developer.
 
